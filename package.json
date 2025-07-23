@@ -1,0 +1,31 @@
+{
+  "name": "@toolify/configs",
+  "version": "1.0.0",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "./eslint": {
+      "import": "./dist/eslint/index.mjs",
+      "require": "./dist/eslint/index.cjs",
+      "types": "./dist/eslint/index.d.ts"
+    },
+    "./prettier": {
+      "import": "./dist/prettier/index.mjs",
+      "require": "./dist/prettier/index.cjs",
+      "types": "./dist/prettier/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/**/* --dts --format esm,cjs --out-dir dist"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.31.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "prettier": "^3.6.2"
+  }
+}
