@@ -1,5 +1,5 @@
 {
-  "name": "@toolify/configs",
+  "name": "@tooliffy/frontend-configs",
   "version": "1.0.0",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -27,5 +27,8 @@
   },
   "dependencies": {
     "prettier": "^3.6.2"
+  },
+  "publishConfig": {
+    "@tooliffy:registry": "https://gitlab.com/api/v4/projects/71874939/packages/npm/"
   }
 }
