@@ -26,8 +26,5 @@
   },
   "publishConfig": {
     "@tooliffy:registry": "https://gitlab.com/api/v4/projects/71874939/packages/npm/"
-  },
-  "scripts": {
-    "prepare": "husky"
   }
 }
