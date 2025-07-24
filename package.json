@@ -1,34 +1,30 @@
 {
   "name": "@tooliffy/frontend-configs",
   "version": "1.0.0",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "exports": {
-    "./eslint": {
-      "import": "./dist/eslint/index.mjs",
-      "require": "./dist/eslint/index.cjs",
-      "types": "./dist/eslint/index.d.ts"
-    },
-    "./prettier": {
-      "import": "./dist/prettier/index.mjs",
-      "require": "./dist/prettier/index.cjs",
-      "types": "./dist/prettier/index.d.ts"
-    }
-  },
-  "scripts": {
-    "build": "tsup src/**/* --dts --format esm,cjs --out-dir dist"
-  },
-  "license": "ISC",
+  "main": "index.js",
+  "description": "NPM пакет частоиспользуемых конфигов",
+  "keywords": [
+    "eslint",
+    "prettier",
+    "stylelint",
+    "config"
+  ],
+  "type": "commonjs",
+  "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "eslint": "^9.31.0",
-    "tsup": "^8.5.0",
-    "typescript": "^5.8.3"
-  },
-  "dependencies": {
-    "prettier": "^3.6.2"
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
+    "prettier-plugin-sort-imports": "^1.8.8",
+    "stylelint": "^16.22.0"
   },
   "publishConfig": {
     "@tooliffy:registry": "https://gitlab.com/api/v4/projects/71874939/packages/npm/"
+  },
+  "scripts": {
+    "prepare": "husky"
   }
 }

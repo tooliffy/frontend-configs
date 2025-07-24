@@ -1,6 +1,4 @@
-import type { Linter } from "eslint";
-
-const config: Linter.BaseConfig = {
+const config = {
   env: {
     node: true,
     es2021: true,
