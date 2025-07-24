@@ -1,7 +1,12 @@
 image: node:latest
 
 stages:
+  - install
   - deploy
+
+install:
+  stage: install
+  script: npm ci
 
 deploy:
   stage: deploy
