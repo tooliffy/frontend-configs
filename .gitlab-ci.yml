@@ -1,17 +1,11 @@
 image: node:20
 
 stages:
-  - install
   - release
   - deploy
 
 variables:
   GITLAB_TOKEN: $GITLAB_TOKEN
-
-install:
-  stage: install
-  script:
-    - npm ci
 
 release:
   stage: release
