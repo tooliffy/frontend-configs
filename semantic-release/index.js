@@ -5,11 +5,10 @@ module.exports = {
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     "@semantic-release/npm",
-    "@semantic-release/git",
     [
-      "@semantic-release/gitlab",
+      "@semantic-release/github",
       {
-        gitlabUrl: "https://gitlab.com",
+        assets: [{ path: "dist/*.tgz", label: "npm package" }],
       },
     ],
   ],
