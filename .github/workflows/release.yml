@@ -23,9 +23,9 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org
 
-      - name: Создание .npmrc
+      - name: Create .npmrc
         run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+          echo "@tooliffy:registry=https://npm.pkg.github.com\n//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
           npm config list
           cat ~/.npmrc
 
