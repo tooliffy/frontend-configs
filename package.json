@@ -14,7 +14,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tooliffy/frontend-configs.git"
+    "url": "git+https://github.com/tooliffy/frontend-configs.git"
   },
   "publishConfig": {
     "access": "public",
