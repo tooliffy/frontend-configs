@@ -17,7 +17,8 @@
     "url": "https://github.com/tooliffy/frontend-configs.git"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
